@@ -1,0 +1,73 @@
+<html lang="en">
+  <head>
+    <script src="languages.js"></script>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="author" content="Shreyas M Kaushik" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.1/css/bootstrap.min.css"
+      integrity="sha384-VCmXjywReHh4PwowAiWNagnWcLhlEJLA5buUprzK8rxFgeH0kww/aWY76TfkUoSX"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <script src="./codemirror/lib/codemirror.js"></script>
+    <link rel="stylesheet" href="./codemirror/lib/codemirror.css" />
+    <link rel="stylesheet" href="./codemirror/seti.css" />
+    <script src="./codemirror/javascript/javascript.js"></script>
+    <script src="./codemirror/addon/closebrackets.js"></script>
+    <script src="./codemirror/addon/matchbrackets.js"></script>
+    <title>Compile</title>
+  </head>
+  <body onload="addlist()">
+    <header class="header">
+      <div class="container-fluid">
+        <h1 class="header__title">CompileIt</h1>
+        <h2 class="header__subtitle">Just Write Code and Compile!</h2>
+      </div>
+    </header>
+    <div class="actions">
+      <div class="actions__container-fluid">
+        <select id="language" class="dropdown">
+          <!-- <option value="c">C</option>
+          <option value="c++">C++</option>
+          <option value="java">Java</option>
+          <option value="python3">Python</option> -->
+        </select>
+      </div>
+    </div>
+    <div class="container-fluid">
+      <div id="code"></div>
+      <script>
+        var editor = CodeMirror(document.querySelector("#code"), {
+          lineNumbers: true,
+          tabSize: 2,
+          spellcheck: true,
+          autocorrect: true,
+          value: "Code Here",
+          mode: "javascript",
+          theme: "seti",
+          matchBrackets: true,
+          autoCloseBrackets: true,
+          closeBrackets: true
+        });
+      </script>
+      <div class="col align-self-start">
+        <input
+          id="stdin"
+          class="title-input"
+          placeholder="Provide Inputs (if any)"
+        />
+        <button id="compile" class="button">Compile</button>
+      </div>
+    </div>
+    <div class="container-fluid">
+      <div class="fakeScreen" id="opscreen" style="visibility: hidden">
+        <p class="line1">Output<span class="cursor1">_</span></p>
+        <p class="line4">><span id="output" class="cursor4">_</span></p>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
