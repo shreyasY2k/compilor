@@ -50,34 +50,3 @@ app.post("/", (req, res) => {
 app.listen(port, () => {
   console.log(`Server listening at http://localhost:${port}`);
 });
-
-// const http = require("http");
-// var qs = require("querystring");
-// function doOnRequest(request, response) {
-//   if (request.method === "POST") {
-//     request.on("data", chunk => {
-//       console.log(`Data chunk available: ${chunk}`);
-//     });
-//     response.setHeader("Access-Control-Allow-Origin", "*");
-//     response.setHeader("Access-Control-Allow-Headers", "*");
-//     response.writeHead(200, { "Content-Type": "text/html" });
-//     // response.setHeader(
-//     //   "Access-Control-Allow-Methods",
-//     //   "GET, POST, OPTIONS, PUT, PATCH, DELETE"
-//     // );
-//     console.log(qs.parse(request.body));
-//     response.end("Connected Succesfully");
-//   } else {
-//     // Handle 404 error: page not found
-//     response.statusCode = 404;
-//     response.statusMessage = "Error not Found";
-//     response.end();
-//   }
-// }
-
-// const server = http.createServer(doOnRequest);
-
-// server.listen(3000, () => {
-//   console.log("Server Listening on port 3000");
-// });
-// var bodyParser = require("body-parser");
