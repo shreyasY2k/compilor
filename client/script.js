@@ -10,7 +10,7 @@ async function compileIt() {
       language: document.querySelector("#language").value,
       standardIn: document
         .querySelector("#stdin")
-        .value.split(/[\s,]+/)
+        .value.split(/[|]+/)
         .join("\n")
     })
   })
