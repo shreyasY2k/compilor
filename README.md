@@ -7,7 +7,7 @@ Online Compiler using JDoodle API
 * [Heroku Account](https://www.heroku.com)(optional)
 
 # Working
-* The client side is built using HTML CSS and Vanilla JS. 
+* The client side is built using HTML CSS Vanilla JS. 
 * Clone the repository and open index.html with a Live Server or Xampp. Client should be ready now
 * Open terminal and navigate to server folder. 
 * This is a Web application which uses the Jdoodle api on the server side to satisfy client requests
@@ -15,6 +15,7 @@ Online Compiler using JDoodle API
 * Run "npm install" to install dependencies.
 * Then run "npm start" or "node server.js" to start the server. 
 * Your app is now deployed locally
+* You can download the entire [CodeMirror](https://www.codemirror.net) zip to alter the style of the editor.
 
 # Server Deployment:[Heroku](https://www.heroku.com)
 * To deploy on heroku signin to your heroku account. Creat a nodeJS app.
