@@ -1,6 +1,6 @@
 async function compileIt() {
   document.getElementById("opscreen").style.visibility = "visible";
-  var response = await fetch("https://codeorbored.herokuapp.com", {
+  var response = await fetch("http://127.0.0.1:3000", {
     method: "POST",
     headers: {
       "Content-Type": "text/plain"
