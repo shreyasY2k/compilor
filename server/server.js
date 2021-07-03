@@ -60,10 +60,7 @@ app.post("/compile", (req, res) => {
     language: language,
     stdin: inputs,
     versionIndex: "0",
-    clientId: "2ea10035502b52f6245257edb062ce91",
-    clientSecret:
-      "4c1051b90bd45d5b027f2a0956393bf34d396addb7bc47897f1dc65e72ceee3d"
-  };
+    
   request(
     {
       url: "https://api.jdoodle.com/v1/execute",
