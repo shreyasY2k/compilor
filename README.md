@@ -22,4 +22,4 @@ Online Compiler using JDoodle API
 * Follow further instrictions to deploy your app on heroku.
 * Replace the fetch URL in the script.js file with your server URL.
 
-# Live Preview : [click here](https://www.compilor.study)
+# Live Preview : [click here](https://www.compilor.tech)
